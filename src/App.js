@@ -5,11 +5,11 @@ import Topbar from "./Scenes/global/Topbar";
 import Sidebar from "./Scenes/global/sidebar";
 import Dashboard from "./Scenes/dashboard";
 import React from 'react';
-// import Team from "./Scenes/team";
-// import Invoices from "./Scenes/invoices";
-// import Contacts from "./Scenes/contacts";
+import Team from "./Scenes/Team/Team";
+import Invoices from "./Scenes/Invoices/invoices";
+import Contacts from "./Scenes/Contacts/contacts";
 // import Bar from "./Scenes/bar";
-// import Form from "./Scenes/form";
+import Form from "./Scenes/Form/Form";
 // import Line from "./Scenes/line";
 // import Pie from "./Scenes/pie";
 // import FAQ from "./Scenes/faq";
@@ -28,8 +28,10 @@ function App() {
             <Topbar />
             <Routes>
               <Route path="/" element = {<Dashboard />} />
-              {/* <Route path="/team" element = {<Team />} /> */}
-              {/* <Route path="/invoices" element = {<Invoices />} /> */}
+              <Route path="/Team" element = {<Team />} />
+              <Route path="/Contacts" element = {< Contacts/>} />
+              <Route path="/Invoices" element = {<Invoices />} />
+              <Route path="/Form" element = {<Form />} />
               {/* <Route path="/bar" element = {<Bar />} />
               <Route path="/contacts" element = {< Contacts/>} />
               <Route path="/form" element = {<Form />} />
