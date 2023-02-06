@@ -139,7 +139,6 @@ const checkoutSchema = yup.object().shape({
     .string()
     .matches(phoneRegExp, "Phone number is not valid")
     .required("required"),
-  address1: yup.string().required("required"),
   address2: yup.string().required("required"),
 });
 const initialValues = {
